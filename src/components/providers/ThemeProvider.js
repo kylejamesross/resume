@@ -1,10 +1,10 @@
 import React from "react"
 import { ThemeProvider } from "styled-components"
 
-// 681 976
+// 8.5 11
 const theme = {
-  globalWidth: 850,
-  globalHeight: 976,
+  aspectRatioWidth: 8.5,
+  aspectRatioHeight: 11,
 }
 
 const ThemeProviderComponent = ({ children }) => (
