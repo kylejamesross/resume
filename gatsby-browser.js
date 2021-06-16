@@ -4,4 +4,6 @@
  * See: https://www.gatsbyjs.com/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+import "@fontsource/raleway/700.css"
+import "@fontsource/assistant/600.css"
+import "@fontsource/noto-serif-jp/400.css"

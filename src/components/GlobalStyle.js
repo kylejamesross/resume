@@ -5,6 +5,30 @@ const GlobalStyle = createGlobalStyle`
  html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+
+  font-size: ${({ theme }) => `${theme.font.sizes.minFont}px`};
+
+  @media only screen and (min-width: ${({ theme }) =>
+    `${theme.minScreenSize}px`}) {
+    font-size: ${({ theme }) => {
+      const {
+        minScreenSize,
+        maxScreenSize,
+        font: {
+          sizes: { minFont, maxFont },
+        },
+      } = theme
+      const difference = maxFont - minFont
+      return `calc(${minFont}px + ${difference} * ((100vw - ${minScreenSize}px) / ${
+        maxScreenSize - minScreenSize
+      }))`
+    }};
+  }
+  
+  @media only screen and (min-width: ${({ theme }) =>
+    `${theme.maxScreenSize}px`}) {
+    font-size: ${({ theme }) => `${theme.font.sizes.maxFont}px`};
+  }
 }
 
 body {
@@ -15,9 +39,50 @@ main {
   display: block;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.3;
+  margin: ${({ theme }) => `${theme.font.sizes.baseline}rem`} 0;
+}
+
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+}
+
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: ${({ theme }) => `${theme.font.sizes.h1}rem`};
+}
+
+h2 {
+  font-size: ${({ theme }) => `${theme.font.sizes.h2}rem`};
+}
+
+h3 {
+  font-size: ${({ theme }) => `${theme.font.sizes.h3}rem`};
+}
+
+h4 {
+  font-size: ${({ theme }) => `${theme.font.sizes.h4}rem`};
+}
+
+h5 {
+  font-size: ${({ theme }) => `${theme.font.sizes.h5}rem`};
+}
+
+h6 {
+  font-size: ${({ theme }) => `${theme.font.sizes.h6}rem`};
+}
+
+p {
+  font-size: ${({ theme }) => `${theme.font.sizes.p}rem`};
+  font-family: "Noto Serif JP", sans-serif;
+  font-weight: 400;
+  text-align: justify;
 }
 
 hr {
@@ -182,5 +247,4 @@ template {
   display: none;
 }
 `
-
 export default GlobalStyle
