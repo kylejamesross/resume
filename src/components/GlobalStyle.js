@@ -40,47 +40,53 @@ main {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  line-height: 1.3;
-  margin: ${({ theme }) => `${theme.font.sizes.baseline}rem`} 0;
+  line-height: ${({ theme }) => theme.font.sizes.baseline};
 }
 
 h1, h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: ${({ theme }) => theme.font.families.header};
   font-weight: bold;
 }
 
 h3, h4, h5, h6 {
-  font-family: 'Assistant', sans-serif;
+  font-family: ${({ theme }) => theme.font.families.subHeader};
   font-weight: 600;
 }
 
 h1 {
   font-size: ${({ theme }) => `${theme.font.sizes.h1}rem`};
+  margin: ${({ theme }) => `${theme.spacing.h1}rem 0`};
 }
 
 h2 {
   font-size: ${({ theme }) => `${theme.font.sizes.h2}rem`};
+  margin: ${({ theme }) => `${theme.spacing.h2}rem 0`};
 }
 
 h3 {
   font-size: ${({ theme }) => `${theme.font.sizes.h3}rem`};
+  margin: ${({ theme }) => `${theme.spacing.h3}rem 0`};
 }
 
 h4 {
   font-size: ${({ theme }) => `${theme.font.sizes.h4}rem`};
+  margin: ${({ theme }) => `${theme.spacing.h4}rem 0`};
 }
 
 h5 {
   font-size: ${({ theme }) => `${theme.font.sizes.h5}rem`};
+  margin: ${({ theme }) => `${theme.spacing.h5}rem 0`};
 }
 
 h6 {
   font-size: ${({ theme }) => `${theme.font.sizes.h6}rem`};
+  margin: ${({ theme }) => `${theme.spacing.h6}rem 0`};
 }
 
 p {
   font-size: ${({ theme }) => `${theme.font.sizes.p}rem`};
-  font-family: "Noto Serif JP", sans-serif;
+  margin: ${({ theme }) => `${theme.spacing.p}rem 0`};
+  font-family: ${({ theme }) => theme.font.families.paragraph};
   font-weight: 400;
   text-align: justify;
 }
