@@ -16,6 +16,8 @@ const getTheme = () => {
     colors: {
       primary: "#f0b117",
       secondary: "#2d2d2d",
+      white: "#fff",
+      profileImageBackground: "#b5b6c2",
     },
     font: {
       families: {
@@ -25,7 +27,7 @@ const getTheme = () => {
       },
       sizes: {
         minFont: 14,
-        maxFont: 22,
+        maxFont: 18,
         base,
         baseline,
         h1: getScaledSize(3),
@@ -34,17 +36,17 @@ const getTheme = () => {
         h4: getScaledSize(0),
         h5: getScaledSize(-1),
         h6: getScaledSize(-2),
-        p: getScaledSize(0),
+        p: getScaledSize(-1),
       },
     },
     spacing: {
-      h1: getScaledSize(4),
-      h2: getScaledSize(3),
-      h3: getScaledSize(2),
-      h4: getScaledSize(1),
-      h5: getScaledSize(0),
-      h6: getScaledSize(-1),
-      p: getScaledSize(1),
+      h1: getScaledSize(0),
+      h2: getScaledSize(-1),
+      h3: getScaledSize(-2),
+      h4: getScaledSize(-3),
+      h5: getScaledSize(-4),
+      h6: getScaledSize(-5),
+      p: getScaledSize(-3),
     },
   }
 }

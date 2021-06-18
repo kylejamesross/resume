@@ -39,18 +39,14 @@ main {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+p {
   line-height: ${({ theme }) => theme.font.sizes.baseline};
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25;
   font-family: ${({ theme }) => theme.font.families.header};
   font-weight: bold;
-}
-
-h3, h4, h5, h6 {
-  font-family: ${({ theme }) => theme.font.families.subHeader};
-  font-weight: 600;
 }
 
 h1 {
