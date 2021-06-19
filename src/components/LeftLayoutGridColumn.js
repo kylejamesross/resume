@@ -1,7 +1,10 @@
 import React from "react"
 import LayoutGridColumn from "./LayoutGridColumn"
 import styled from "styled-components"
-import Basics from "./Basics"
+import ResumeImage from "./ResumeImage"
+import Headline from "./Headline"
+import SummarySection from "./sections/SummarySection"
+import SkillsSection from "./sections/SkillsSection"
 
 const StyledLeftLayoutGridColumn = styled(LayoutGridColumn)`
   background-color: ${({ theme }) => theme.colors.secondary};
@@ -10,7 +13,10 @@ const StyledLeftLayoutGridColumn = styled(LayoutGridColumn)`
 
 const LeftLayoutGridColumn = () => (
   <StyledLeftLayoutGridColumn>
-    <Basics />
+    <ResumeImage />
+    <Headline />
+    <SummarySection />
+    <SkillsSection />
   </StyledLeftLayoutGridColumn>
 )
 

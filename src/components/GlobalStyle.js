@@ -84,7 +84,6 @@ p {
   margin: ${({ theme }) => `${theme.spacing.p}rem 0`};
   font-family: ${({ theme }) => theme.font.families.paragraph};
   font-weight: 400;
-  text-align: justify;
 }
 
 hr {
