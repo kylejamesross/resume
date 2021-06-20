@@ -23,7 +23,7 @@ const getTheme = () => {
       families: {
         header: "'Raleway', sans-serif",
         subHeader: "'Assistant', sans-serif",
-        paragraph: "'Noto Serif JP', sans-serif",
+        paragraph: "'Noto Sans JP', sans-serif",
       },
       sizes: {
         minFont: 14,
@@ -37,6 +37,7 @@ const getTheme = () => {
         h5: getScaledSize(-1),
         h6: getScaledSize(-2),
         p: getScaledSize(-1),
+        li: getScaledSize(-1),
       },
     },
     spacing: {

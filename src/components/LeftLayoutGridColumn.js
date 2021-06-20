@@ -3,8 +3,8 @@ import LayoutGridColumn from "./LayoutGridColumn"
 import styled from "styled-components"
 import ResumeImage from "./ResumeImage"
 import Headline from "./Headline"
-import SummarySection from "./sections/SummarySection"
-import SkillsSection from "./sections/SkillsSection"
+import SummarySection from "./sections/summary/SummarySection"
+import SkillsSection from "./sections/skills/SkillsSection"
 
 const StyledLeftLayoutGridColumn = styled(LayoutGridColumn)`
   background-color: ${({ theme }) => theme.colors.secondary};

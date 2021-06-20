@@ -1,7 +1,8 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Section from "../Section"
+import Section from "../../Section"
 import styled from "styled-components"
+import SummarySectionIcon from "./SummarySectionIcon"
 
 const P = styled.p`
   color: ${({ theme }) => theme.colors.white};
@@ -23,7 +24,7 @@ const SummarySection = () => (
       const { basics } = dataJson
       const { summary } = basics
       return (
-        <Section header="Summary">
+        <Section header="Summary" icon={SummarySectionIcon}>
           <P>{summary}</P>
         </Section>
       )

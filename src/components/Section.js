@@ -8,21 +8,26 @@ const StyledSection = styled.div`
 `
 
 const H2 = styled.h2`
+  display: flex;
+  align-items: center;
   color: ${({ theme }) => theme.colors.white};
   text-transform: uppercase;
-  &:after {
-    content: "";
-    height: 2px;
-    width: 50px;
-    display: block;
-    background-color: ${({ theme }) => theme.colors.white};
-    margin-top: ${({ theme }) => `${theme.font.sizes.base / 2}rem`};
+  svg {
+    width: 3rem;
+    height: 3rem;
+    margin-right: ${({ theme }) => `${theme.font.sizes.base * 0.666}rem`};
+    path {
+      fill: ${({ theme }) => theme.colors.white};
+    }
   }
 `
 
-const Section = ({ children, header }) => (
+const Section = ({ children, header, icon: Icon }) => (
   <StyledSection>
-    <H2>{header}</H2>
+    <H2>
+      {Icon && <Icon />}
+      {header}
+    </H2>
     {children}
   </StyledSection>
 )

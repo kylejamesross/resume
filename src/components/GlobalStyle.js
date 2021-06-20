@@ -86,6 +86,20 @@ p {
   font-weight: 400;
 }
 
+li {
+  font-family: ${({ theme }) => theme.font.families.paragraph};
+  font-weight: 400;
+  font-size: ${({ theme }) => `${theme.font.sizes.li}rem`};
+  line-height: 1.5;
+}
+
+ul {
+  padding-inline-start: ${({ theme }) => `${theme.font.sizes.base}rem`};
+  padding-inline-end: ${({ theme }) => `${theme.font.sizes.base}rem`};
+  margin-block-start: ${({ theme }) => `${theme.font.sizes.base}rem`};
+  margin-block-end: ${({ theme }) => `${theme.font.sizes.base}rem`};
+}
+
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
