@@ -5,5 +5,5 @@
  */
 
 import "@fontsource/raleway/700.css"
-import "@fontsource/assistant/600.css"
+import "@fontsource/assistant/300.css"
 import "@fontsource/noto-sans-jp/400.css"

@@ -37,6 +37,7 @@ const getTheme = () => {
         h5: getScaledSize(-1),
         h6: getScaledSize(-2),
         p: getScaledSize(-1),
+        a: getScaledSize(-1),
         li: getScaledSize(-1),
       },
     },
@@ -48,6 +49,7 @@ const getTheme = () => {
       h5: getScaledSize(-4),
       h6: getScaledSize(-5),
       p: getScaledSize(-3),
+      a: getScaledSize(-3),
     },
   }
 }

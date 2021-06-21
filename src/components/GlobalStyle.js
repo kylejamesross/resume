@@ -86,6 +86,13 @@ p {
   font-weight: 400;
 }
 
+a {
+  font-size: ${({ theme }) => `${theme.font.sizes.a}rem`};
+  margin: ${({ theme }) => `${theme.spacing.a}rem 0`};
+  font-family: ${({ theme }) => theme.font.families.paragraph};
+  font-weight: 400;
+}
+
 li {
   font-family: ${({ theme }) => theme.font.families.paragraph};
   font-weight: 400;

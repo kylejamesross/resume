@@ -8,7 +8,7 @@ const StyledResumeImage = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  max-width: 150px;
+  max-width: 100px;
   margin: 0 auto;
   height: auto;
   clip-path: circle(50% at 50% 50%);

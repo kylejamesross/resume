@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { StaticQuery, graphql } from "gatsby"
 
-const UL = styled.ul`
+const Ul = styled.ul`
   color: ${({ theme }) => theme.colors.white};
   columns: 2 auto;
   list-style: square;
@@ -22,11 +22,11 @@ const Skills = () => (
     render={({ dataJson }) => {
       const { skills } = dataJson
       return (
-        <UL>
+        <Ul>
           {skills.map(({ name }) => (
             <li key={name}>{name}</li>
           ))}
-        </UL>
+        </Ul>
       )
     }}
   />

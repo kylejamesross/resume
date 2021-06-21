@@ -2,7 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Section from "../../Section"
 import styled from "styled-components"
-import SummarySectionIcon from "./SummarySectionIcon"
+import Icon from "../../../images/svg/modern-technologies-robotics.svg"
 
 const P = styled.p`
   color: ${({ theme }) => theme.colors.white};
@@ -24,7 +24,7 @@ const SummarySection = () => (
       const { basics } = dataJson
       const { summary } = basics
       return (
-        <Section header="Summary" icon={SummarySectionIcon}>
+        <Section header="Summary" icon={Icon}>
           <P>{summary}</P>
         </Section>
       )
