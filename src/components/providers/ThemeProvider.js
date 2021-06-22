@@ -16,6 +16,7 @@ const getTheme = () => {
     colors: {
       primary: "#f0b117",
       secondary: "#2d2d2d",
+      black: "#2d2d2d",
       white: "#fff",
       profileImageBackground: "#b5b6c2",
     },
@@ -26,8 +27,8 @@ const getTheme = () => {
         paragraph: "'Noto Sans JP', sans-serif",
       },
       sizes: {
-        minFont: 14,
-        maxFont: 18,
+        minFont: 10,
+        maxFont: 14,
         base,
         baseline,
         h1: getScaledSize(3),

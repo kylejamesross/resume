@@ -1,12 +1,12 @@
 import React from "react"
 import GetInTouch from "./GetInTouch"
-import Section from "../../Section"
+import LeftSection from "../LeftSection"
 import Icon from "../../../images/svg/joy-sunshine.svg"
 
 const GetInTouchSection = () => (
-  <Section header="Get in touch" icon={Icon}>
+  <LeftSection header="Get in touch" icon={Icon}>
     <GetInTouch />
-  </Section>
+  </LeftSection>
 )
 
 export default GetInTouchSection
