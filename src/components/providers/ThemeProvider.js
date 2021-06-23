@@ -14,7 +14,7 @@ const getTheme = () => {
     minScreenSize: 550,
     maxScreenSize: 1300,
     colors: {
-      primary: "#f0b117",
+      primary: "#de2520",
       secondary: "#2d2d2d",
       black: "#2d2d2d",
       white: "#fff",
