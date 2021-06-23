@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Kyle Ross`,
+    description: `Resume showing work history, skills, and projects`,
+    author: `Kyle Ross`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -20,13 +20,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Kyle - Resume`,
+        short_name: `resume`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#de2520`,
+        theme_color: `#de2520`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/svg/favicon.svg`,
       },
     },
     `gatsby-transformer-json`,

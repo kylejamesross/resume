@@ -10,7 +10,7 @@ import Content from "../components/Content"
 const IndexPage = () => (
   <Providers>
     <GlobalStyle />
-    <Seo title="Kyle Ross - Resume" />
+    <Seo title="Resume" />
     <Content>
       <LayoutGrid>
         <LeftLayoutGridColumn />
