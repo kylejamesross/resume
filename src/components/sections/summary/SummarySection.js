@@ -6,7 +6,6 @@ import Icon from "../../../images/svg/modern-technologies-robotics.svg"
 
 const P = styled.p`
   color: ${({ theme }) => theme.colors.white};
-  margin-bottom: ${({ theme }) => `${theme.spacing.h2}rem`};
 `
 
 const SummarySection = () => (

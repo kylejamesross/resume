@@ -6,13 +6,13 @@ const LayoutGrid = styled.div`
 
   @media only screen and (min-width: 550px) {
     display: grid;
-    grid-template-columns: 0.7fr 2fr;
+    grid-template-columns: 35% 65%;
     height: 100%;
   }
 
   @media print {
     display: grid;
-    grid-template-columns: 1.3fr 2fr;
+    grid-template-columns: 35% 65%;
     height: 100%;
   }
 `

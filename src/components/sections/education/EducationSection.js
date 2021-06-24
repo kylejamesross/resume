@@ -1,12 +1,12 @@
 import React from "react"
 import Icon from "../../../images/svg/graduation-cap.svg"
-import RightSection from "../RightSection"
+import LeftSection from "../LeftSection"
 import Education from "./Education"
 
 const EducationSection = () => (
-  <RightSection header="Education" icon={Icon}>
+  <LeftSection header="Education" icon={Icon}>
     <Education />
-  </RightSection>
+  </LeftSection>
 )
 
 export default EducationSection

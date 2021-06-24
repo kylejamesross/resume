@@ -5,6 +5,7 @@ import ResumeImage from "./ResumeImage"
 import Headline from "./Headline"
 import SummarySection from "./sections/summary/SummarySection"
 import SkillsSection from "./sections/skills/SkillsSection"
+import EducationSection from "./sections/education/EducationSection"
 import GetInTouchSection from "./sections/get-in-touch/GetInTouchSection"
 
 const StyledLeftLayoutGridColumn = styled(LayoutGridColumn)`
@@ -18,6 +19,7 @@ const LeftLayoutGridColumn = () => (
     <Headline />
     <SummarySection />
     <SkillsSection />
+    <EducationSection />
     <GetInTouchSection />
   </StyledLeftLayoutGridColumn>
 )

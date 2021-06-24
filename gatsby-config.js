@@ -29,14 +29,6 @@ module.exports = {
         icon: `src/images/svg/favicon.svg`,
       },
     },
-    `gatsby-transformer-json`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/data/`,
-      },
-    },
     `gatsby-transformer-inline-svg`,
     `gatsby-plugin-optimize-svgs`,
     {

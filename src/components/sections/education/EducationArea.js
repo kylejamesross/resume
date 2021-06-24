@@ -1,9 +1,17 @@
 import React from "react"
-import { Line1, Line2 } from "../RightSectionComponents"
 import styled from "styled-components"
 
 const P = styled.p`
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.white};
+`
+
+const H4 = styled.h4`
+  color: ${({ theme }) => theme.colors.white};
+`
+
+const StudyArea = styled(H4)`
+  font-family: ${({ theme }) => theme.font.families.subHeader};
+  font-weight: 300;
 `
 
 const EducationArea = ({
@@ -15,12 +23,10 @@ const EducationArea = ({
   description,
 }) => (
   <div>
-    <Line1>
-      {startYear} - {endYear} {">>>"} {institution}
-    </Line1>
-    <Line2>
+    <H4>{institution}</H4>
+    <StudyArea>
       {studyType} in {area}
-    </Line2>
+    </StudyArea>
     <P>{description}</P>
   </div>
 )

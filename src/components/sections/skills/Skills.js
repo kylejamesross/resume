@@ -11,8 +11,8 @@ const Ul = styled.ul`
 const Skills = () => (
   <StaticQuery
     query={graphql`
-      query Skills($skills: DataJsonSkillsFilterListInput = {}) {
-        dataJson(skills: $skills) {
+      query Skills {
+        dataJson {
           skills {
             name
           }

@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 
-  font-size: ${({ theme }) => `${theme.font.sizes.minFont}px`};
+  font-size: ${({ theme }) => `${theme.font.sizes.mobileFont}px`};
 
   @media only screen and (min-width: ${({ theme }) =>
     `${theme.minScreenSize}px`}) {

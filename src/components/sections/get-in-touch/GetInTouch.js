@@ -14,8 +14,6 @@ const Ul = styled.ul`
   padding-inline-start: 0;
   padding-inline-end: 0;
   margin-inline-start: ${({ theme }) => `${theme.font.sizes.base / 2}rem`};
-  position: relative;
-  top: -0.4rem;
   li {
     display: flex;
     align-items: center;
@@ -79,7 +77,11 @@ const GetInTouch = () => (
           </li>
           <li>
             <PhoneIcon />
-            <a href={`tel:${formattedPhone}`}>{phone}</a>
+            {phone ? (
+              <a href={`tel:${formattedPhone}`}>{phone}</a>
+            ) : (
+              <p>###-###-####</p>
+            )}
           </li>
           <li>
             <WebsiteIcon />
@@ -91,7 +93,7 @@ const GetInTouch = () => (
           </li>
           <li>
             <GithubIcon />
-            <a href={githubProfile.url}>{githubProfile.url}</a>
+            <a href={githubProfile.url}>https://bit.ly/3qo2DNK</a>
           </li>
         </Ul>
       )
