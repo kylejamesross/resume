@@ -8,7 +8,7 @@ const getTimeFormat = date => {
 }
 
 const StyledJob = styled.div`
-  margin: 1rem 0;
+  margin: ${({ theme }) => `${theme.font.sizes.base}rem`} 0;
 `
 
 const Ul = styled.ul`

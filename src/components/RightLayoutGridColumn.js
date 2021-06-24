@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import LayoutGridColumn from "./LayoutGridColumn"
 import WorkExperienceSection from "./sections/work-experience/WorkExperienceSection"
+import ReferencesSection from "./sections/references/ReferencesSection"
 
 const StyledLayoutGridColumn = styled(LayoutGridColumn)`
   border-top: ${({ theme }) =>
@@ -14,6 +15,7 @@ const StyledLayoutGridColumn = styled(LayoutGridColumn)`
 const RightLayoutGridColumn = () => (
   <StyledLayoutGridColumn>
     <WorkExperienceSection />
+    <ReferencesSection />
   </StyledLayoutGridColumn>
 )
 
