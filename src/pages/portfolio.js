@@ -4,7 +4,7 @@ import PortfolioColumn from "../components/PortfolioColumn"
 
 const PortfolioPage = () => (
   <Layout>
-    <PortfolioColumn />
+    <PortfolioColumn key="portfolio" />
   </Layout>
 )
 

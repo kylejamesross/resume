@@ -36,6 +36,7 @@ const Education = () => (
               end: { year: endYear },
             }) => (
               <EducationArea
+                key={institution}
                 startYear={startYear}
                 endYear={endYear}
                 institution={institution}

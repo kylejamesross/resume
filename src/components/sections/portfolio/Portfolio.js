@@ -1,5 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import Project from "./Project"
+import SlashBorder from "../../SlashBorder"
 
 const Portfolio = () => (
   <StaticQuery
@@ -16,13 +18,9 @@ const Portfolio = () => (
                 }
               }
             }
-            name
-            repositoryUrl
             summary
-            type
             languages
             libraries
-            primaryLanguage
             website
           }
         }
@@ -31,7 +29,7 @@ const Portfolio = () => (
     render={({ dataJson }) => {
       const { projects } = dataJson
       return (
-        <div>
+        <>
           {projects.map(
             ({
               displayName,
@@ -39,26 +37,25 @@ const Portfolio = () => (
               images,
               languages,
               libraries,
-              name,
-              primaryLanguage,
-              repositoryUrl,
               summary,
-              type,
               website,
             }) => (
-              <div style={{ margin: "1rem 0" }}>
-                <div>{displayName}</div>
-                <div>{githubUrl}</div>
-                <div>{name}</div>
-                <div>{primaryLanguage}</div>
-                <div>{repositoryUrl}</div>
-                <div>{summary}</div>
-                <div>{type}</div>
-                <div>{website}</div>
+              <div key={displayName}>
+                <Project
+                  key={displayName}
+                  displayName={displayName}
+                  githubUrl={githubUrl}
+                  images={images}
+                  languages={languages}
+                  libraries={libraries}
+                  summary={summary}
+                  website={website}
+                />
+                <SlashBorder color="#2d2d2d" />
               </div>
             )
           )}
-        </div>
+        </>
       )
     }}
   />

@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 
 const IndexPage = () => (
   <Layout>
-    <WorkExperienceColumn />
+    <WorkExperienceColumn key="work-experience" />
   </Layout>
 )
 

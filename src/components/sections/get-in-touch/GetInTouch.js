@@ -23,6 +23,9 @@ const Ul = styled.ul`
     svg {
       width: ${({ theme }) => `${theme.font.sizes.base * 1.5}rem`};
       margin-right: ${({ theme }) => `${theme.font.sizes.base / 2}rem`};
+      path {
+        fill: ${({ theme }) => theme.colors.white};
+      }
     }
     a {
       color: ${({ theme }) => theme.colors.white};
