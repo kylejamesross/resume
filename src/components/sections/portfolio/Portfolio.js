@@ -51,7 +51,7 @@ const Portfolio = () => (
                   summary={summary}
                   website={website}
                 />
-                <SlashBorder color="#2d2d2d" />
+                <SlashBorder color="#2d2d2d98" />
               </div>
             )
           )}
