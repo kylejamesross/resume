@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const SlashBorder = styled.div`
-  height: 6px;
+  height: 4px;
   background: ${({ color }) => `linear-gradient(
     45deg,
     transparent,
@@ -11,8 +11,12 @@ const SlashBorder = styled.div`
     transparent 66.67%,
     transparent 100%
   )`};
-  background-size: 6px 100%;
+  background-size: 4px 100%;
   width: 100%;
+  @media only print {
+    background: ${({ color }) => color};
+    height: 1px;
+  }
 `
 
 export default SlashBorder
