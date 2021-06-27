@@ -38,6 +38,9 @@ module.exports = {
         display: "standalone",
         icon: "src/images/svg/favicon.svg",
         crossOrigin: `use-credentials`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
       },
     },
   ],
