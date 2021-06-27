@@ -8,9 +8,11 @@ const H1 = styled.h1`
   text-align: center;
 `
 
-const H3 = styled.h3`
+const H3 = styled.h2`
   color: ${({ theme }) => theme.colors.white};
   font-family: ${({ theme }) => theme.font.families.subHeader};
+  font-size: ${({ theme }) => `${theme.font.sizes.h3}rem`};
+  margin: ${({ theme }) => `${theme.spacing.h3}rem 0`};
   font-weight: 300;
   margin: 0;
   text-align: center;
