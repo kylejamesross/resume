@@ -28,9 +28,9 @@ const getTheme = () => {
         paragraph: "'Noto Sans JP', sans-serif",
       },
       sizes: {
-        mobileFont: 14,
-        minFont: 13,
-        maxFont: 15,
+        mobileFont: 17,
+        minFont: 15,
+        maxFont: 17,
         base,
         baseline,
         h1: getScaledSize(3),
