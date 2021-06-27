@@ -4,7 +4,7 @@ import LeftSection from "../LeftSection"
 import Icon from "../../../images/svg/joy-sunshine.svg"
 
 const GetInTouchSection = () => (
-  <LeftSection header="Get in touch" icon={Icon}>
+  <LeftSection header="Info" icon={Icon}>
     <GetInTouch />
   </LeftSection>
 )

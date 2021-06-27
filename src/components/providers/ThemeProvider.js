@@ -29,8 +29,8 @@ const getTheme = () => {
       },
       sizes: {
         mobileFont: 14,
-        minFont: 12,
-        maxFont: 14,
+        minFont: 13,
+        maxFont: 15,
         base,
         baseline,
         h1: getScaledSize(3),
