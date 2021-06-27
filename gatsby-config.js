@@ -16,19 +16,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Kyle - Resume`,
-        short_name: `resume`,
-        start_url: `/`,
-        background_color: `#de2520`,
-        theme_color: `#de2520`,
-        display: `minimal-ui`,
-        icon: `src/images/svg/favicon.svg`,
-      },
-    },
     `gatsby-transformer-inline-svg`,
     `gatsby-plugin-optimize-svgs`,
     {
@@ -37,6 +24,20 @@ module.exports = {
         rule: {
           include: /images/,
         },
+      },
+    },
+    "gatsby-plugin-offline",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Resume",
+        short_name: "resume",
+        start_url: "/",
+        background_color: "#fff",
+        theme_color: "#de2520",
+        display: "standalone",
+        icon: "src/images/svg/favicon.svg",
+        crossOrigin: `use-credentials`,
       },
     },
   ],

@@ -31,7 +31,7 @@ const ResumeImage = () => (
       const { image } = basics
       return (
         <StyledResumeImage>
-          <Image src={image} width="100%" alt="profile" />
+          <Image src={image} width="100px" height="100px" alt="profile" />
         </StyledResumeImage>
       )
     }}

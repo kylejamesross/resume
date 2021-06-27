@@ -9,5 +9,5 @@ export const Line2 = styled.h4`
 `
 
 export const AltLine2 = styled.span`
-  color: ${({ theme }) => `${theme.colors.black}96`};
+  color: ${({ theme }) => `${theme.colors.black}A6`};
 `

@@ -29,7 +29,7 @@ const getTheme = () => {
       },
       sizes: {
         mobileFont: 14,
-        minFont: 10,
+        minFont: 11,
         maxFont: 14,
         base,
         baseline,
