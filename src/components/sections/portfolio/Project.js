@@ -42,7 +42,7 @@ const P = styled.p`
 `
 
 const Languages = styled.p`
-  color: ${({ theme }) => `${theme.colors.black}96`};
+  color: ${({ theme }) => `${theme.colors.black}A6`};
 `
 
 const Project = ({
@@ -64,7 +64,12 @@ const Project = ({
   return (
     <StyledProject>
       <A href={website}>
-        <ProjectImage alt={displayName} src={projectImageUrl} />
+        <ProjectImage
+          alt={displayName}
+          src={projectImageUrl}
+          height="75px"
+          width="auto"
+        />
       </A>
       <DisplayName>{displayName}</DisplayName>
       {githubUrl && (
