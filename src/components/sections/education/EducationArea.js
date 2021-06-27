@@ -5,12 +5,17 @@ const P = styled.p`
   color: ${({ theme }) => theme.colors.white};
 `
 
-const H4 = styled.h4`
+const H4 = styled.h3`
   color: ${({ theme }) => theme.colors.white};
+  font-size: ${({ theme }) => `${theme.font.sizes.h4}rem`};
+  margin: ${({ theme }) => `${theme.spacing.h4}rem 0`};
 `
 
-const StudyArea = styled(H4)`
+const StudyArea = styled.h4`
+  color: ${({ theme }) => theme.colors.white};
   font-family: ${({ theme }) => theme.font.families.subHeader};
+  font-size: ${({ theme }) => `${theme.font.sizes.h4}rem`};
+  margin: ${({ theme }) => `${theme.spacing.h4}rem 0`};
   font-weight: 300;
 `
 
