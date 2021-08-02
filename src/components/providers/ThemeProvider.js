@@ -23,7 +23,12 @@ const getTheme = () => {
     },
     font: {
       families: {
-        header: "'Raleway', sans-serif",
+        unloaded: {
+          header: "Helvetica, sans-serif",
+          subHeader: "Helvetica, sans-serif",
+          paragraph: "'New Times Roman', sans-serif",
+        },
+        header: "'Assistant', sans-serif",
         subHeader: "'Assistant', sans-serif",
         paragraph: "'Noto Sans JP', sans-serif",
       },

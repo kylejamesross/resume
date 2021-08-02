@@ -58,28 +58,32 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
-  font-family: ${({ theme }) => theme.font.families.header};
+  font-family: ${({ theme }) => theme.font.families.unloaded.header};
   font-weight: bold;
 }
 
 h1 {
   font-size: ${({ theme }) => `${theme.font.sizes.h1}rem`};
   margin: ${({ theme }) => `${theme.spacing.h1}rem 0`};
+  letter-spacing: 0.1rem;
 }
 
 h2 {
   font-size: ${({ theme }) => `${theme.font.sizes.h2}rem`};
   margin: ${({ theme }) => `${theme.spacing.h2}rem 0`};
+  letter-spacing: 0.075rem;
 }
 
 h3 {
   font-size: ${({ theme }) => `${theme.font.sizes.h3}rem`};
   margin: ${({ theme }) => `${theme.spacing.h3}rem 0`};
+  letter-spacing: 0.05rem;
 }
 
 h4 {
   font-size: ${({ theme }) => `${theme.font.sizes.h4}rem`};
   margin: ${({ theme }) => `${theme.spacing.h4}rem 0`};
+  letter-spacing: 0.025rem;
 }
 
 h5 {
@@ -95,19 +99,19 @@ h6 {
 p {
   font-size: ${({ theme }) => `${theme.font.sizes.p}rem`};
   margin: ${({ theme }) => `${theme.spacing.p}rem 0`};
-  font-family: ${({ theme }) => theme.font.families.paragraph};
+  font-family: ${({ theme }) => theme.font.families.unloaded.paragraph};
   font-weight: 400;
 }
 
 a {
   font-size: ${({ theme }) => `${theme.font.sizes.a}rem`};
   margin: ${({ theme }) => `${theme.spacing.a}rem 0`};
-  font-family: ${({ theme }) => theme.font.families.paragraph};
+  font-family: ${({ theme }) => theme.font.families.unloaded.paragraph};
   font-weight: 400;
 }
 
 li {
-  font-family: ${({ theme }) => theme.font.families.paragraph};
+  font-family: ${({ theme }) => theme.font.families.unloaded.paragraph};
   font-weight: 400;
   font-size: ${({ theme }) => `${theme.font.sizes.li}rem`};
   line-height: 1.5;
@@ -118,6 +122,21 @@ ul {
   padding-inline-end: ${({ theme }) => `${theme.font.sizes.base}rem`};
   margin-block-start: ${({ theme }) => `${theme.font.sizes.base}rem`};
   margin-block-end: ${({ theme }) => `${theme.font.sizes.base}rem`};
+}
+
+.wf-active {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: ${({ theme }) => theme.font.families.header};
+  }
+  p {
+    font-family: ${({ theme }) => theme.font.families.paragraph};
+  }
+  a {
+    font-family: ${({ theme }) => theme.font.families.paragraph};
+  }
+  li {
+    font-family: ${({ theme }) => theme.font.families.paragraph};
+  }
 }
 
 hr {

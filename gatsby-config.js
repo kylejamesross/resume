@@ -43,5 +43,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Assistant:300, 700", "Noto Sans JP: 400"],
+        },
+      },
+    },
   ],
 }
