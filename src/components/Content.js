@@ -6,7 +6,7 @@ const Content = styled.div`
   height: 100vh;
   overflow: auto;
 
-  @media screen,
+  @media screen and (min-width: 550px) and (min-height: 550px),
     print and (min-height: 800px) and (min-width: ${({ theme }) =>
       `${theme.minScreenSize}px`}) {
     width: 100vw;

@@ -4,7 +4,7 @@ const LayoutGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
 
-  @media only screen and (min-width: 550px) {
+  @media only screen and (min-width: 550px) and (min-height: 550px) {
     display: grid;
     grid-template-columns: 35% 65%;
     height: 100%;
