@@ -6,7 +6,6 @@ import RightLayoutGridColumn from "./RightLayoutGridColumn"
 const WorkExperienceColumn = () => (
   <RightLayoutGridColumn>
     <WorkExperienceSection />
-    <ReferencesSection />
   </RightLayoutGridColumn>
 )
 
