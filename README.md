@@ -1,2 +1,2 @@
-# Resume
-My resume showing work history and personal details
+# Resume 🗒️
+My resume showing work history and personal details.
