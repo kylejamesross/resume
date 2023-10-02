@@ -1,0 +1,11 @@
+---
+
+const { title } = Astro.props;
+---
+<div class="py-3 border-base-content border-b-[1px]">
+	<h3 class="text-2xl font-medium tracking-wide leading-normal m-auto flex items-center mb-3">
+		<slot name="icon" />
+		{title}
+	</h3>
+	<slot />
+</div>

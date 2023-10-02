@@ -1,0 +1,27 @@
+<main class="main">
+	<slot />
+</main>
+<style>
+.main {
+	max-width: 64rem;
+	margin: auto;
+	height: 100vh;
+	overflow: auto;
+}
+
+@media screen (min-width: 48rem) and (min-height: 48rem), print and (min-height: 48rem) and (min-width: 48rem){
+	.main {
+		aspect-ratio: 8.5 / 11;
+	}
+}
+
+@media print {
+	.main {
+		visibility: visible;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
+
+</style>

@@ -1,0 +1,51 @@
+---
+const title = "Kyle Ross";
+const description = "Resume show work history and skills.";
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<!-- Global Metadata -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+
+
+		<!-- Font preloads -->
+		<link rel="preload" href="/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin />
+		<link rel="preload" href="/fonts/Roboto-Medium.ttf" as="font" type="font/ttf" crossorigin />
+		<link rel="preload" href="/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin />
+		<link rel="preload" href="/fonts/Roboto-Light.ttf" as="font" type="font/ttf" crossorigin />
+		<link rel="preload" href="/fonts/Roboto-Italic.ttf" as="font" type="font/ttf" crossorigin />
+
+		<!-- Primary Meta Tags -->
+		<title>{title}</title>
+		<meta name="title" content={title} />
+		<meta name="description" content={description} />
+
+		<!-- Canonical URL -->
+		<link rel="canonical" href={canonicalURL} />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+
+		<title>{title}</title>
+	</head>
+	<body class="bg-neutral">
+		<slot />
+	</body>
+</html>

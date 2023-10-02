@@ -1,0 +1,12 @@
+---
+import { portfolioJSON } from "../consts";
+import LeftSection from "./LeftSection.astro";
+import ModernTechnologiesRoboticsIcon from "./icons/ModernTechnologiesRoboticsIcon.astro";
+---
+
+<LeftSection title="SUMMARY">
+	<ModernTechnologiesRoboticsIcon slot="icon" />
+	<p class="font-regular text-base tracking-wide leading-normal">
+		{portfolioJSON?.basics?.summary}
+	</p>
+</LeftSection>

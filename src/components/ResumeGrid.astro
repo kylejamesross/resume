@@ -1,0 +1,25 @@
+<div class="resume-grid">
+	<slot />
+</div>
+<style>
+.resume-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 48rem) and (min-height: 48rem) {
+	.resume-grid {
+		display: grid;
+		grid-template-columns: 35% 65%;
+		height: 100%;
+	}
+}
+
+@media print {
+	.resume-grid {
+		display: grid;
+		grid-template-columns: 35% 65%;
+		height: 100%;
+	}
+}
+</style>

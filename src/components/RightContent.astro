@@ -1,0 +1,51 @@
+---
+import BriefcaseIcon from "./icons/BriefcaseIcon.astro";
+import { portfolioJSON } from "../consts";
+const { work: workplaces } = portfolioJSON;
+
+const formatDate = (date: string) =>
+	date
+		? new Date(date).toLocaleDateString("en-US", {
+			year: "numeric",
+			month: "long",
+		})
+		: "";
+---
+
+<h3
+	class="text-2xl font-medium tracking-wide leading-normal m-auto flex items-center mb-3"
+>
+	<BriefcaseIcon />
+	WORK EXPERIENCE
+</h3>
+<ul>
+	{
+	workplaces.map((workplace) => (
+		<li class="mb-2">
+			<div class="flex justify-between items-center">
+				<h4 class="font-medium text-lg text-base tracking-wide leading-normal">
+					{workplace.name}{" "}
+				</h4>
+				<div class="badge badge-accent text-accent-content">
+					{formatDate(workplace.startDate)} - {formatDate(workplace.endDate) || 'Current'}
+				</div>
+			</div>
+			<div class="flex justify-between items-center">
+				<h4 class="font-medium text-md text-base tracking-wide leading-normal text-primary">
+					{workplace.position}{" "}
+				</h4>
+				<div class="badge badge-secondary text-secondary-content">
+					{workplace.location}
+				</div>
+			</div>
+			<ul class="list-square list-inside">
+				{workplace.highlights?.map((highlight) => (
+					<li class="text-base text-base tracking-tight leading-normal">
+						{highlight}
+					</li>
+				))}
+			</ul>
+		</li>
+	))
+	}
+</ul>

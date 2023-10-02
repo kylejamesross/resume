@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Main from '../components/Main.astro';
+import ResumeGrid from '../components/ResumeGrid.astro';
+import LeftContent from '../components/LeftContent.astro';
+import RightContent from '../components/RightContent.astro';
+---
+<Layout>
+	<Main>
+		<ResumeGrid>
+			<div class="bg-base-100 px-4 pb-4 pt-8">
+				<LeftContent />
+			</div>
+			<div class="bg-base-content text-neutral p-4 min-[768px]:border-t-[16px] min-[768px]:border-r-[16px] border-primary">
+				<RightContent />
+			</div>
+		</ResumeGrid>
+	</Main>
+</Layout>

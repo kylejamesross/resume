@@ -1,0 +1,23 @@
+---
+import { portfolioJSON } from "../consts";
+import LeftSection from "./LeftSection.astro";
+import GraduationCapIcon from "./icons/GraduationCapIcon.astro";
+
+const formatDate = (date: string) =>
+	new Date(date).toLocaleDateString("en-US", { year: "numeric", month: "long" });
+const university = portfolioJSON.education?.[0];
+
+---
+
+<LeftSection title="EDUCATION">
+	<GraduationCapIcon slot="icon" />
+	<h4 class="font-medium text-lg text-base tracking-wide leading-normal mb-2">
+		{university.institution}
+	</h4>
+	<h4 class="font-light text-lg text-base tracking-wide leading-normal mb-2">
+		{university.studyType} in {university.area}
+	</h4>
+	<p class="text-sm font-regular italic text-base tracking-wide leading-normal">
+		{formatDate(university.startDate)} - {formatDate(university.endDate)}
+	</p>
+</LeftSection>

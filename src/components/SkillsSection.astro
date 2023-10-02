@@ -1,0 +1,12 @@
+---
+import { portfolioJSON } from "../consts";
+import LeftSection from "./LeftSection.astro";
+import CodingBracketsLaptopIcon from "./icons/CodingBracketsLaptopIcon.astro";
+---
+
+<LeftSection title="SKILLS">
+	<CodingBracketsLaptopIcon slot="icon" />
+	<ul class="columns-2 list-square list-inside">
+		{portfolioJSON.skills?.map(({ name }) => <li class="leading-normal">{name}</li>)}
+	</ul>
+</LeftSection>
