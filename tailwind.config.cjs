@@ -8,7 +8,16 @@ module.exports = {
 	},
 	plugins: [require("daisyui")],
 	daisyui: {
-		themes: ["dracula"],
+
+		themes: [
+			{
+				dracula: {
+					...require("daisyui/src/theming/themes")["[data-theme=dracula]"],
+					"primary": "hsl(330.24deg 100% 63%)",
+					"primary-focus": "hsl(330.24deg 100% 58%)",
+				},
+			},
+		],
 		logs: false, 
 	}
 }

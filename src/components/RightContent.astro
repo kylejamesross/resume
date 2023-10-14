@@ -23,16 +23,16 @@ const formatDate = (date: string) =>
 	workplaces.map((workplace) => (
 		<li class="mb-2">
 			<div class="flex justify-between items-center">
-				<h4 class="font-medium text-lg text-base tracking-wide leading-normal">
-					{workplace.name}{" "}
+				<h4 class="font-bold text-xl text-base tracking-wide leading-normal text-primary">
+					{workplace.position}{" "}
 				</h4>
 				<div class="badge badge-accent text-accent-content">
 					{formatDate(workplace.startDate)} - {formatDate(workplace.endDate) || 'Current'}
 				</div>
 			</div>
 			<div class="flex justify-between items-center">
-				<h4 class="font-medium text-md text-base tracking-wide leading-normal text-primary-focus">
-					{workplace.position}{" "}
+				<h4 class="font-medium text-lg text-base tracking-wide leading-normal">
+					{workplace.name}{" "}
 				</h4>
 				<div class="badge badge-secondary text-secondary-content">
 					{workplace.location}
