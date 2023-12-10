@@ -40,3 +40,7 @@ body {
 .italic {
   font-variation-settings: 'ital' 1;
 }
+
+.slanted {
+    font-variation-settings: 'slnt' -10;
+}

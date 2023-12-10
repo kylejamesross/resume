@@ -26,7 +26,7 @@ const formatDate = (date: string) =>
 				<h4 class="font-bold text-xl text-base tracking-wide leading-normal text-primary">
 					{workplace.position}{" "}
 				</h4>
-				<div class="badge badge-accent text-accent-content">
+				<div class="badge badge-accent text-accent-content slanted">
 					{formatDate(workplace.startDate)} - {formatDate(workplace.endDate) || 'Current'}
 				</div>
 			</div>
@@ -34,7 +34,7 @@ const formatDate = (date: string) =>
 				<h4 class="font-medium text-lg text-base tracking-wide leading-normal">
 					{workplace.name}{" "}
 				</h4>
-				<div class="badge badge-secondary text-secondary-content">
+				<div class="badge badge-secondary text-secondary-content slanted">
 					{workplace.location}
 				</div>
 			</div>
