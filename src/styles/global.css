@@ -1,8 +1,7 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('/fonts/RobotoFlex.ttf') format('woff2 supports variations');
-  src: url('/fonts/RobotoFlex.ttf') format('woff2');
+  src: url('/fonts/RobotoFlex.ttf') format('woff2-variations');
   font-weight: 100 1000;
   font-stretch: 25% 151%;
   font-display: swap;
