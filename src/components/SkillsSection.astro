@@ -1,12 +1,17 @@
 ---
-import { portfolioJSON } from "../consts";
+import { skillGroups } from "../consts";
 import LeftSection from "./LeftSection.astro";
 import CodingBracketsLaptopIcon from "./icons/CodingBracketsLaptopIcon.astro";
 ---
 
 <LeftSection title="SKILLS">
 	<CodingBracketsLaptopIcon slot="icon" />
-	<ul class="columns-2 list-square list-inside">
-		{portfolioJSON.skills?.map(({ name }) => <li class="leading-normal">{name}</li>)}
+	<ul>
+		{skillGroups.map(([skillGroupName, skills]) => 
+		<li class="leading-normal mb-2">
+			<span class="font-medium">{skillGroupName}:</span>
+			{skills.map(skill => <span class="badge badge-outline mx-1">{skill.name}</span>)}
+		</li>
+		)}
 	</ul>
 </LeftSection>
