@@ -1,18 +1,15 @@
 ---
 import { portfolioJSON } from "../consts";
 import LeftSection from "./LeftSection.astro";
-import GithubIcon from "./icons/GithubIcon.astro";
 import JoySunshineIcon from "./icons/JoySunshineIcon.astro";
-import LinkedInIcon from "./icons/LinkedInIcon.astro";
 import LocationIcon from "./icons/LocationIcon.astro";
 import MailIcon from "./icons/MailIcon.astro";
 import PhoneIcon from "./icons/PhoneIcon.astro";
 import WebIcon from "./icons/WebIcon.astro";
 
-const { locationAsString, email, phone, website, profiles } = portfolioJSON?.basics;
+const { locationAsString, email, phone, website, profiles } =
+	portfolioJSON?.basics;
 const formattedPhone = phone.replace("(", "").replace(") ", "-");
-const linkedInProfile = profiles?.find(({ network }) => network === "LinkedIn");
-const githubProfile = profiles?.find(({ network }) => network === "GitHub");
 ---
 
 <LeftSection title="INFO">
@@ -41,14 +38,6 @@ const githubProfile = profiles?.find(({ network }) => network === "GitHub");
 		<li class="mb-3">
 			<WebIcon />
 			<a class="link" href={website}>{website}</a>
-		</li>
-		<li class="mb-3">
-			<LinkedInIcon />
-			<a class="link" href={linkedInProfile.url}>{linkedInProfile.url}</a>
-		</li>
-		<li class="mb-3">
-			<GithubIcon />
-			<a class="link" href={githubProfile.url}>{githubProfile.url}</a>
 		</li>
 	</ul>
 </LeftSection>
